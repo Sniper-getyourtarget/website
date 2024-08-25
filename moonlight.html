@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Moon Light - Pineapple Blend</title>
+    <style>
+        /* Simple styling for the button */
+        .add-to-cart-btn2 {
+            background-color: #ff6600;
+            color: white;
+            padding: 10px 20px;
+            border: none;
+            cursor: pointer;
+            font-size: 16px;
+        }
+        .add-to-cart-btn2:hover {
+            background-color: #e65c00;
+        }
+    </style>
+</head>
+<body style="background-color: #ADD8E680;">
+
+    <div class="product2">
+        <h2>Moon Light - Pineapple Blend</h2>
+        <p>$7.99</p>
+        <button class="add-to-cart-btn2" onclick="addToCart('Moon Light - Pineapple Blend', 7.99)">
+            Add to Cart
+        </button>
+    </div>
+
+    <script>
+        // Simple function to simulate adding a product to a cart
+        function addToCart(productName, productPrice) {
+            alert(productName + " has been added to your cart at $" + productPrice);
+            // Here you would normally update the cart count, save the item to local storage, or update a database
+        }
+    </script>
+    <br><br>
+     <form>
+        <lable for="Quantity">Enter the Quantity:</lable>
+        <input type="number" id="Quantity" placeholder="Enter the Quantity" required>
+
+        <br><br>
+<lable for="number">Enter your phone number:</lable>
+<input type="number" id="number" placeholder="Enter your Number" required>
+
+<br><br>
+<lable for="Address">Enter your address:</lable>
+<input type="Address" id="Address" placeholder="Enter your Address" required>
+
+<br><br>
+<input type="submit" value="Order">
+        </form>
+
+</body>
+</html>
